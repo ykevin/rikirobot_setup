@@ -14,6 +14,7 @@ git clone https://github.com/ykevin/rplidar_ros.git
 git clone https://github.com/ykevin/riki_visualize.git
 git clone https://github.com/ykevin/riki_msgs.git
 git clone https://github.com/ykevin/ros_arduino.git
+git clone https://github.com/ykevin/riki_pid.git
 
 
 echo "ROS Packages Installed Successfully"
