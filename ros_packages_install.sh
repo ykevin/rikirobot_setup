@@ -6,6 +6,7 @@ sudo apt-get install -y ros-kinetic-xv-11-laser-driver
 sudo apt-get install -y ros-kinetic-gmapping
 sudo apt-get install -y ros-kinetic-navigation
 sudo apt-get install -y ros-kinetic-map-server
+sudo apt-get install -y ros-kinetic-rgbd-launch
 
 cd ~/catkin_ws/src
 
