@@ -26,5 +26,7 @@ echo "Astra xtion driver please: https://orbbec3d.com/develop/"
 git clone https://github.com/orbbec/ros_astra_launch.git
 git clone https://github.com/orbbec/ros_astra_camera.git
 
+echo "reinstall geometry2 sloved imu error"
+git clone https://github.com/ros/geometry2.git
 
 echo "ROS Packages Installed Successfully"
