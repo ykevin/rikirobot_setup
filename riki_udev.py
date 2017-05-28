@@ -48,7 +48,7 @@ if __name__ == "__main__":
             save_rules = raw_input(" Do you wany to save your uDev_rules?(Y/N) : ")
             if save_rules.upper() == 'Y':
                 if len(udev_rules) > 0:
-                    with io.FileIO("/etc/udev/rules.d/58-riki.rules", "w") as file:
+                    with io.FileIO("/etc/udev/rules.d/59-riki.rules", "w") as file:
                         file.write(udev_rules)
                     print "/etc/udev/rules.d/58-riki.rules saved."
                     print "Restart the computer to initialize udev rules."

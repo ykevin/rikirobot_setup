@@ -1,0 +1,3 @@
+KERNEL=="ttyACM?", SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="4294967295", MODE="0660" SYMLINK+="rikibase"
+KERNEL=="ttyUSB?", SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", ATTRS{serial}=="0001", MODE="0660" SYMLINK+="rikilidar"
+KERNEL=="ttyUSB?", SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE="0660" SYMLINK+="rikistm32base"
