@@ -1,5 +1,6 @@
 #sudo apt-get update
 sudo apt-get install -y libv4l-dev 
+sudo apt-get install -y chrony
 sudo apt-get install -y libbullet-dev 
 sudo apt-get install -y ros-kinetic-roslint
 sudo apt-get install -y ros-kinetic-rosserial
