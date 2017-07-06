@@ -9,16 +9,14 @@ sudo apt-get install -y ros-kinetic-gmapping
 sudo apt-get install -y ros-kinetic-navigation
 sudo apt-get install -y ros-kinetic-map-server
 sudo apt-get install -y ros-kinetic-rgbd-launch
+sudo apt-get install -y ros-kinetic-costmap-2d
 
 
 cd ~/catkin_ws/src
 
-git clone https://github.com/ykevin/rikirobot.git
-git clone https://github.com/ykevin/rplidar_ros.git
-git clone https://github.com/ykevin/riki_visualize.git
-git clone https://github.com/ykevin/riki_msgs.git
-git clone https://github.com/ykevin/ros_arduino.git
-git clone https://github.com/ykevin/riki_pid.git
+git clone https://github.com/ykevin/rikirobot_project.git
+git submodule init
+git submodule update
 
 echo "add camera ros packages!!"
 git clone https://github.com/ktossell/camera_umd.git
