@@ -1,19 +1,20 @@
 #sudo apt-get update
+ver=$(rosversion -d)
 sudo apt-get install -y libv4l-dev 
 sudo apt-get install -y chrony
 sudo apt-get install -y libbullet-dev 
 sudo apt-get install -y libudev-dev
-sudo apt-get install -y ros-kinetic-roslint
-sudo apt-get install -y ros-kinetic-rosserial
-sudo apt-get install -y ros-kinetic-imu-filter-madgwick
-sudo apt-get install -y ros-kinetic-gmapping
-sudo apt-get install -y ros-kinetic-navigation
-sudo apt-get install -y ros-kinetic-map-server
-sudo apt-get install -y ros-kinetic-rgbd-launch
-sudo apt-get install -y ros-kinetic-costmap-2d
-sudo apt-get install -y ros-kinetic-camera-info-manager
-sudo apt-get install -y ros-kinetic-image-transport
-sudo apt-get install -y ros-kinetic-teleop-twist-keyboard 
+sudo apt-get install -y ros-$ver\-roslint
+sudo apt-get install -y ros-$ver\-rosserial
+sudo apt-get install -y ros-$ver\-imu-filter-madgwick
+sudo apt-get install -y ros-$ver\-gmapping
+sudo apt-get install -y ros-$ver\-navigation
+sudo apt-get install -y ros-$ver\-map-server
+sudo apt-get install -y ros-$ver\-rgbd-launch
+sudo apt-get install -y ros-$ver\-costmap-2d
+sudo apt-get install -y ros-$ver\-camera-info-manager
+sudo apt-get install -y ros-$ver\-image-transport
+sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
 
 
 cd ~/catkin_ws/src
