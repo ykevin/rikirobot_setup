@@ -11,6 +11,7 @@ sudo rm -rf ~/.platformio/
 #wget https://www.pjrc.com/teensy/49-teensy.rules
 sudo cp 49-teensy.rules /etc/udev/rules.d/
 sudo cp 58-riki.rules /etc/udev/rules.d/
+sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
 
 echo "Installation Done"
 
