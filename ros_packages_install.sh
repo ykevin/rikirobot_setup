@@ -4,6 +4,7 @@ sudo apt-get install -y libv4l-dev
 sudo apt-get install -y chrony
 sudo apt-get install -y libbullet-dev 
 sudo apt-get install -y libudev-dev
+sudo apt-get install -y mini-httpd
 sudo apt-get install -y ros-$ver\-roslint
 sudo apt-get install -y ros-$ver\-rosserial
 sudo apt-get install -y ros-$ver\-imu-filter-madgwick
@@ -15,6 +16,12 @@ sudo apt-get install -y ros-$ver\-costmap-2d
 sudo apt-get install -y ros-$ver\-camera-info-manager
 sudo apt-get install -y ros-$ver\-image-transport
 sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
+
+sudo apt-get install -y ros-$ver\-rosbridge-suite
+sudo apt-get install -y ros-$ver\-robot-pose-publisher
+sudo apt-get install -y ros-$ver\-tf2-web-republisher
+sudo apt-get install -y ros-$ver\-web-video-server
+
 
 
 cd ~/catkin_ws/src
