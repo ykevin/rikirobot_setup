@@ -1,4 +1,4 @@
-KERNEL=="ttyACM?", SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", ATTRS{serial}=="4294967295", MODE="0660" SYMLINK+="rikibase"
+KERNEL=="ttyACM?", SUBSYSTEM=="tty", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0483", MODE="0660" SYMLINK+="rikibase"
 KERNEL=="ttyUSB?", SUBSYSTEM=="tty", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="ea60", ATTRS{serial}=="0001", MODE="0660" SYMLINK+="rikilidar"
 KERNEL=="ttyUSB?", SUBSYSTEM=="tty", ATTRS{idVendor}=="1a86", ATTRS{idProduct}=="7523", MODE="0660" SYMLINK+="rikibase"
 KERNEL=="ttyUSB?", SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", MODE="0660" SYMLINK+="rikibase"
