@@ -44,4 +44,15 @@ git clone https://github.com/ros/geometry2.git
 echo "slove rosserial indigo version"
 git clone  https://github.com/ros-drivers/rosserial.git 
 
+echo "add ps3"
+sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
+sudo pip install pybluez
+git clone https://github.com/ros-drivers/joystick_drivers.git
+
+echo "add Twist multiplexer"
+git clone https://github.com/ros-teleop/twist_mux.git
+
+echo "add Generic Keyboard Teleop"
+git clone https://github.com/ykevin/teleop_twist_keyboard.git
+
 echo "ROS Packages Installed Successfully"
