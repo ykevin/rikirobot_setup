@@ -15,7 +15,7 @@ sudo apt-get install -y ros-$ver\-rgbd-launch
 sudo apt-get install -y ros-$ver\-costmap-2d
 sudo apt-get install -y ros-$ver\-camera-info-manager
 sudo apt-get install -y ros-$ver\-image-transport
-sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
+#sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
 
 sudo apt-get install -y ros-$ver\-rosbridge-suite
 sudo apt-get install -y ros-$ver\-robot-pose-publisher
@@ -42,17 +42,23 @@ echo "reinstall geometry2 sloved imu error"
 git clone https://github.com/ros/geometry2.git
 
 echo "slove rosserial indigo version"
-git clone  https://github.com/ros-drivers/rosserial.git 
+#git clone  https://github.com/ros-drivers/rosserial.git 
 
 echo "add ps3"
-sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
-sudo pip install pybluez
-git clone https://github.com/ros-drivers/joystick_drivers.git
+#sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
+#sudo pip install pybluez
+#git clone https://github.com/ros-drivers/joystick_drivers.git
 
 echo "add Twist multiplexer"
-git clone https://github.com/ros-teleop/twist_mux.git
+#git clone https://github.com/ros-teleop/twist_mux.git
 
 echo "add Generic Keyboard Teleop"
 git clone https://github.com/ykevin/teleop_twist_keyboard.git
+
+echo "add rplidar ros packages"
+git clone https://github.com/ykevin/rplidar_ros.git
+
+echo "add EAI X4 lidar ros packages"
+git clone -b 1.2.3 https://github.com/EAIBOT/ydlidar
 
 echo "ROS Packages Installed Successfully"
