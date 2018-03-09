@@ -41,6 +41,9 @@ git clone https://github.com/orbbec/ros_astra_camera.git
 echo "reinstall geometry2 sloved imu error"
 git clone https://github.com/ros/geometry2.git
 
+echo "add hector slam"
+git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
+
 echo "slove rosserial indigo version"
 #git clone  https://github.com/ros-drivers/rosserial.git 
 
