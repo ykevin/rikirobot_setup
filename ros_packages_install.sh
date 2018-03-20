@@ -68,7 +68,7 @@ echo "add hector slam"
 git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
 
 echo "add rplidar ros packages"
-git clone https://github.com/robopeak/rplidar_ros.git
+git clone -b slam https://github.com/robopeak/rplidar_ros.git
 
 echo "add EAI X4 lidar ros packages"
 git clone -b 1.2.3 https://github.com/EAIBOT/ydlidar.git
