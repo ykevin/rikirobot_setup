@@ -15,15 +15,14 @@ sudo apt-get install -y ros-$ver\-rgbd-launch
 sudo apt-get install -y ros-$ver\-costmap-2d
 sudo apt-get install -y ros-$ver\-camera-info-manager
 sudo apt-get install -y ros-$ver\-image-transport
-#sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
+sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
 
 sudo apt-get install -y ros-$ver\-rosbridge-suite
 sudo apt-get install -y ros-$ver\-robot-pose-publisher
 sudo apt-get install -y ros-$ver\-tf2-web-republisher
 sudo apt-get install -y ros-$ver\-web-video-server
 
-
-
+mkdir ~/catkin_ws/src -p
 cd ~/catkin_ws/src
 mkdir depth_camera lidar teleop
 
@@ -72,5 +71,12 @@ git clone -b slam https://github.com/robopeak/rplidar_ros.git
 
 echo "add EAI X4 lidar ros packages"
 git clone -b 1.2.3 https://github.com/EAIBOT/ydlidar.git
+
+
+cd ~/catkin_ws/
+catkin_make -j1
+
+echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+source ~/.bashrc
 
 echo "ROS Packages Installed Successfully"
