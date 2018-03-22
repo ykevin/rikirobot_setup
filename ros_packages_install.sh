@@ -44,6 +44,7 @@ echo "add Astra xtion live"
 echo "Astra xtion driver please: https://orbbec3d.com/develop/"
 git clone https://github.com/orbbec/ros_astra_launch.git
 git clone https://github.com/orbbec/ros_astra_camera.git
+git clone https://github.com/xaxxontech/depthimage_to_laserscan.git
 
 cd  ~/catkin_ws/src
 echo "slove rosserial indigo version"
