@@ -79,4 +79,6 @@ catkin_make -j1
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
+sudo usermod -aG dialout $USER
+
 echo "ROS Packages Installed Successfully"
