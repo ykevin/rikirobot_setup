@@ -1,6 +1,7 @@
 #sudo apt-get update
 ver=$(rosversion -d)
 sudo apt-get install -y libv4l-dev 
+sudo apt-get install -y build-essential
 sudo apt-get install -y chrony
 sudo apt-get install -y libbullet-dev 
 sudo apt-get install -y libudev-dev
