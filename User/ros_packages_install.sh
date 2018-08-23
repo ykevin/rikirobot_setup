@@ -17,6 +17,7 @@ sudo apt-get install -y ros-$ver\-costmap-2d
 sudo apt-get install -y ros-$ver\-camera-info-manager
 sudo apt-get install -y ros-$ver\-image-transport
 sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
+sudo apt-get install -y ros-$ver\-robot-upstart 
 
 sudo apt-get install -y ros-$ver\-rosbridge-suite
 sudo apt-get install -y ros-$ver\-robot-pose-publisher
