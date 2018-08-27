@@ -5,6 +5,7 @@ sudo apt-get install -y build-essential
 sudo apt-get install -y chrony
 sudo apt-get install -y libbullet-dev 
 sudo apt-get install -y libudev-dev
+sudo apt-get install -y libusb-dev
 sudo apt-get install -y mini-httpd
 sudo apt-get install -y ros-$ver\-roslint
 sudo apt-get install -y ros-$ver\-rosserial
@@ -50,6 +51,9 @@ git clone https://github.com/orbbec/ros_astra_camera.git
 git clone https://github.com/xaxxontech/depthimage_to_laserscan.git
 
 cd  ~/catkin_ws/src
+echo "add opencv demo"
+git clone https://github.com/ykevin/opencv_apps.git
+
 echo "slove rosserial indigo version"
 #git clone  https://github.com/ros-drivers/rosserial.git 
 
