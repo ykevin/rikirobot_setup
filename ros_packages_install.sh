@@ -81,6 +81,10 @@ git clone -b slam https://github.com/robopeak/rplidar_ros.git
 echo "add EAI X4 lidar ros packages"
 git clone -b 1.2.3 https://github.com/EAIBOT/ydlidar.git
 
+cd ~/catkin_ws/src
+echo "add robot_localization"
+git clone https://github.com/cra-ros-pkg/robot_localization.git
+
 
 cd ~/catkin_ws/
 catkin_make -j1
