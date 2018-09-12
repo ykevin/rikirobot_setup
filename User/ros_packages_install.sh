@@ -20,7 +20,7 @@ sudo apt-get install -y ros-$ver\-image-transport
 sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
 sudo apt-get install -y ros-$ver\-robot-upstart 
 sudo apt-get install -y ros-$ver\-slam-karto
-sudo apt-get install -y ros-$ver\-robot-localization
+sudo apt-get install -y ros-$ver\-geographic-msgs 
 
 sudo apt-get install -y ros-$ver\-rosbridge-suite
 sudo apt-get install -y ros-$ver\-robot-pose-publisher

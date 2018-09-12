@@ -20,7 +20,7 @@ sudo apt-get install -y ros-$ver\-image-transport
 sudo apt-get install -y ros-$ver\-teleop-twist-keyboard 
 sudo apt-get install -y ros-$ver\-robot-upstart
 sudo apt-get install -y ros-$ver\-slam-karto
-sudo apt-get install -y ros-$ver\-robot-localization
+sudo apt-get install -y ros-$ver\-geographic-msgs 
 
 sudo apt-get install -y ros-$ver\-rosbridge-suite
 sudo apt-get install -y ros-$ver\-robot-pose-publisher
@@ -84,6 +84,9 @@ git clone -b 1.2.3 https://github.com/EAIBOT/ydlidar.git
 cd ~/catkin_ws/src
 echo "add robot_localization"
 git clone https://github.com/cra-ros-pkg/robot_localization.git
+
+echo "add imu filter"
+git clone https://github.com/ykevin/imu_filter_madgwick.git
 
 
 cd ~/catkin_ws/
