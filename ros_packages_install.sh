@@ -40,10 +40,6 @@ cd ~/catkin_ws/src
 echo "add camera ros packages!!"
 git clone https://github.com/ktossell/camera_umd.git
 
-echo "reinstall geometry2 sloved imu error"
-git clone https://github.com/ros/geometry2.git
-
-
 cd depth_camera
 echo "add Astra xtion live"
 echo "Astra xtion driver please: https://orbbec3d.com/develop/"
