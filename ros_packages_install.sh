@@ -1,5 +1,7 @@
 #sudo apt-get update
 ver=$(rosversion -d)
+sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
+sudo pip install pybluez
 sudo apt-get install -y libv4l-dev 
 sudo apt-get install -y build-essential
 sudo apt-get install -y chrony
@@ -21,7 +23,6 @@ sudo apt-get install -y ros-$ver\-teleop-twist-keyboard
 sudo apt-get install -y ros-$ver\-robot-upstart
 sudo apt-get install -y ros-$ver\-slam-karto
 sudo apt-get install -y ros-$ver\-geographic-msgs 
-
 sudo apt-get install -y ros-$ver\-rosbridge-suite
 sudo apt-get install -y ros-$ver\-robot-pose-publisher
 sudo apt-get install -y ros-$ver\-tf2-web-republisher
