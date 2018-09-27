@@ -1,4 +1,6 @@
-#sudo apt-get update
+sudo cp 58-riki.rules /etc/udev/rules.d/
+sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
+sudo apt-get update
 ver=$(rosversion -d)
 sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
 sudo pip install pybluez
@@ -28,9 +30,6 @@ sudo apt-get install -y ros-$ver\-robot-pose-publisher
 sudo apt-get install -y ros-$ver\-tf2-web-republisher
 sudo apt-get install -y ros-$ver\-web-video-server
 
-sudo cp 49-teensy.rules /etc/udev/rules.d/
-sudo cp 58-riki.rules /etc/udev/rules.d/
-sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
