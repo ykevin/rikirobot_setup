@@ -28,66 +28,9 @@ sudo apt-get install -y ros-$ver\-robot-pose-publisher
 sudo apt-get install -y ros-$ver\-tf2-web-republisher
 sudo apt-get install -y ros-$ver\-web-video-server
 
-mkdir ~/catkin_ws/src -p
-cd ~/catkin_ws/src
-mkdir depth_camera lidar teleop
-
-git clone https://github.com/ykevin/rikirobot_project.git
-cd rikirobot_project
-git submodule init
-git submodule update
-
-cd ~/catkin_ws/src
-echo "add camera ros packages!!"
-git clone https://github.com/ktossell/camera_umd.git
-
-cd depth_camera
-echo "add Astra xtion live"
-echo "Astra xtion driver please: https://orbbec3d.com/develop/"
-git clone https://github.com/orbbec/ros_astra_launch.git
-git clone https://github.com/orbbec/ros_astra_camera.git
-git clone https://github.com/xaxxontech/depthimage_to_laserscan.git
-
-cd  ~/catkin_ws/src
-echo "add opencv demo"
-git clone https://github.com/ykevin/opencv_apps.git
-
-echo "slove rosserial indigo version"
-#git clone  https://github.com/ros-drivers/rosserial.git 
-
-echo "add ps3"
-#sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
-#sudo pip install pybluez
-#git clone https://github.com/ros-drivers/joystick_drivers.git
-
-echo "add Twist multiplexer"
-#git clone https://github.com/ros-teleop/twist_mux.git
-
-cd teleop
-echo "add Generic Keyboard Teleop"
-git clone https://github.com/ykevin/teleop_twist_keyboard.git
-
-cd ~/catkin_ws/src
-cd lidar
-echo "add hector slam"
-git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
-
-echo "add rplidar ros packages"
-git clone -b slam https://github.com/robopeak/rplidar_ros.git
-
-echo "add EAI X4 lidar ros packages"
-git clone -b 1.2.3 https://github.com/EAIBOT/ydlidar.git
-
-cd ~/catkin_ws/src
-echo "add robot_localization"
-git clone https://github.com/cra-ros-pkg/robot_localization.git
-
-echo "add imu filter"
-git clone https://github.com/ykevin/imu_filter_madgwick.git
-
-
-cd ~/catkin_ws/
-catkin_make -j1
+sudo cp 49-teensy.rules /etc/udev/rules.d/
+sudo cp 58-riki.rules /etc/udev/rules.d/
+sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
