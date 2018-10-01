@@ -13,7 +13,6 @@ sudo apt-get install -y libusb-dev
 sudo apt-get install -y mini-httpd
 sudo apt-get install -y ros-$ver\-roslint
 sudo apt-get install -y ros-$ver\-rosserial
-sudo apt-get install -y ros-$ver\-imu-filter-madgwick
 sudo apt-get install -y ros-$ver\-gmapping
 sudo apt-get install -y ros-$ver\-navigation
 sudo apt-get install -y ros-$ver\-map-server
