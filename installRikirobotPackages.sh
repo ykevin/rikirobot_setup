@@ -3,6 +3,7 @@ sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
 sudo apt-get update
 ver=$(rosversion -d)
 sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
+sudo apt-get install -y git vim
 sudo pip install pybluez
 sudo apt-get install -y libv4l-dev 
 sudo apt-get install -y build-essential
