@@ -1,0 +1,6 @@
+sudo apt-get update  -o Acquire::http::proxy=“http://192.168.88.106:8888/”
+
+curl -k --proxy 192.168.88.106:8888 https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+wget  -e "http_proxy=http://192.168.88.106:8888/" https://dl.google.com/coral/python/tflite_runtime-1.14.0-cp35-cp35m-linux_x86_64.whl
+wget  -e "http_proxy=http://192.168.88.106:8888/" https://dl.google.com/coral/python/tflite_runtime-1.14.0-cp35-cp35m-linux_aarch64.whl

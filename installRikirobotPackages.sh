@@ -29,6 +29,7 @@ sudo apt-get install -y ros-$ver\-rosbridge-suite
 sudo apt-get install -y ros-$ver\-robot-pose-publisher
 sudo apt-get install -y ros-$ver\-tf2-web-republisher
 sudo apt-get install -y ros-$ver\-web-video-server
+sudo apt-get install ros-kinetic-vision-msgs
 
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
