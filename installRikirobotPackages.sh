@@ -30,11 +30,13 @@ sudo apt-get install -y ros-$ver\-robot-pose-publisher
 sudo apt-get install -y ros-$ver\-tf2-web-republisher
 sudo apt-get install -y ros-$ver\-web-video-server
 sudo apt-get install -y ros-$ver\-vision-msgs
+sudo apt-get install -y ros-$ver\-ar-track-alvar
 
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 
 sudo usermod -aG dialout $USER
+sudo usermod -aG video $USER
 
 echo "ROS Packages Installed Successfully"
