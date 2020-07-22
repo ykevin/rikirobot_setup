@@ -6,6 +6,7 @@ ver=$(rosversion -d)
 #sudo apt-get install -y git vim
 #sudo pip install pybluez
 sudo apt-get install -y libv4l-dev 
+sudo apt-get install libgeographic-dev
 sudo apt-get install -y build-essential
 sudo apt-get install -y chrony
 #sudo apt-get install -y libbullet-dev 
