@@ -1,12 +1,14 @@
 sudo cp 58-riki.rules /etc/udev/rules.d/
 sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
+sudo cp 60-respeaker.rules /etc/udev/rules.d/
 sudo apt-get update
 ver=$(rosversion -d)
 #sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
 #sudo apt-get install -y git vim
 #sudo pip install pybluez
+sudo apt-get install -y portaudio19-dev sox libsox-fmt-mp3
 sudo apt-get install -y libv4l-dev 
-sudo apt-get install libgeographic-dev
+sudo apt-get install -y libgeographic-dev
 sudo apt-get install -y build-essential
 sudo apt-get install -y chrony
 #sudo apt-get install -y libbullet-dev 
@@ -32,7 +34,10 @@ sudo apt-get install -y ros-$ver\-tf2-web-republisher
 sudo apt-get install -y ros-$ver\-web-video-server
 sudo apt-get install -y ros-$ver\-vision-msgs
 sudo apt-get install -y ros-$ver\-ar-track-alvar
+sudo apt-get install -y ros-$ver\-cartographer-ros
 sudo apt-get install -y ros-$ver\-audio-common-msgs
+
+pip install pyaudio  baidu-aip SpeechRecognition --user -i https://mirrors.aliyun.com/pypi/simple/ 
 
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
