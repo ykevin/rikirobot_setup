@@ -1,7 +1,7 @@
 sudo cp 58-riki.rules /etc/udev/rules.d/
 sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
 sudo cp 60-respeaker.rules /etc/udev/rules.d/
-sudo apt-get update
+#sudo apt-get update
 ver=$(rosversion -d)
 #sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
 #sudo apt-get install -y git vim
