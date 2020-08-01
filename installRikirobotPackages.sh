@@ -37,7 +37,7 @@ sudo apt-get install -y ros-$ver\-ar-track-alvar
 sudo apt-get install -y ros-$ver\-cartographer-ros
 sudo apt-get install -y ros-$ver\-audio-common-msgs
 
-pip install pyaudio  baidu-aip SpeechRecognition --user -i https://mirrors.aliyun.com/pypi/simple/ 
+pip install pyaudio  baidu-aip SpeechRecognition pixel-ring pyusb  pyDes --user -i https://mirrors.aliyun.com/pypi/simple/ 
 
 
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
