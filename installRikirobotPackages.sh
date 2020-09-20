@@ -2,14 +2,14 @@ sudo cp 58-riki.rules /etc/udev/rules.d/
 sudo cp 558-orbbec-usb.rules /etc/udev/rules.d/
 sudo apt-get update
 ver=$(rosversion -d)
-#sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
-#sudo apt-get install -y git vim
-#sudo pip install pybluez
+sudo apt-get install -y libusb-dev libspnav-dev  libbluetooth-dev libcwiid-dev
+sudo apt-get install -y git vim
+sudo pip install pybluez
 sudo apt-get install -y libv4l-dev 
 sudo apt-get install libgeographic-dev
 sudo apt-get install -y build-essential
 sudo apt-get install -y chrony
-#sudo apt-get install -y libbullet-dev 
+sudo apt-get install -y libbullet-dev 
 sudo apt-get install -y libudev-dev
 sudo apt-get install -y libusb-dev
 #sudo apt-get install -y mini-httpd
