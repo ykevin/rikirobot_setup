@@ -36,6 +36,7 @@ sudo apt-get install -y ros-$ver\-vision-msgs
 sudo apt-get install -y ros-$ver\-ar-track-alvar
 sudo apt-get install -y ros-$ver\-cartographer-ros
 sudo apt-get install -y ros-$ver\-audio-common-msgs
+sudo apt-get install -y ros-$ver\-cartographer-rviz ros-$ver\-cartographer-ros  ros-$ver\-rtabmap-ros
 
 pip install pyaudio  baidu-aip SpeechRecognition pixel-ring pyusb imutils pyDes --user -i https://mirrors.aliyun.com/pypi/simple/ 
 
